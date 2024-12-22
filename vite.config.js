@@ -4,6 +4,7 @@ import { defineConfig } from "vite";
 export default mergeConfig(
   defineConfig({
     esbuild: {
+      // 여기서 createVnode를 도입해가지구 jsx를 생성한다~
       jsxFactory: "createVNode",
     },
     optimizeDeps: {
